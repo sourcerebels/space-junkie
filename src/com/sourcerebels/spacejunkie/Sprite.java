@@ -2,7 +2,6 @@ package com.sourcerebels.spacejunkie;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
-import android.util.Log;
 
 public class Sprite {
 
@@ -46,8 +45,6 @@ public class Sprite {
 		
 		int nextX = (int) (x - accelerationX);
 		int nextY = (int) (y + accelerationY);
-
-		Log.d("EDU","nextX " + nextX + " xRate " + xRate + " maxX " + maxX);
 
 		if (nextX > xRate && nextX < maxX) {
 			x = nextX;
